@@ -1,0 +1,23 @@
+{
+  "name": "employee-manager",
+  "version": "1.0.0",
+  "description": "AS A manager\r I WANT to generate a webpage that displays my team's basic info\r SO THAT I have quick access to their emails and GitHub profiles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mark-U20/Employee-Manager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mark-U20/Employee-Manager/issues"
+  },
+  "homepage": "https://github.com/Mark-U20/Employee-Manager#readme",
+  "dependencies": {
+    "inquirer": "^9.0.2",
+    "jest": "^28.1.3"
+  }
+}
