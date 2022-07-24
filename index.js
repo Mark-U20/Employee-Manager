@@ -5,7 +5,7 @@ import Engineer from './lib/Engineer.js';
 import Manager from './lib/Manager.js';
 import Menus from './lib/Menus.js';
 import Teams from './lib/Teams.js';
-
+import HTMLGenerator from './lib/HTMLGenerator.js';
 
 //get inquirer to prompt the user for input
 import chalk from 'chalk';
@@ -30,7 +30,7 @@ import figlet from 'figlet';
 // console.log(chalk.blue('Please enter your selection:'));
 // console.log(chalk.blue('---------------------------------'));
 const menu = new Menus();
-
+const gen = new HTMLGenerator();
 let logo = 'Employee Manager';
 console.log("1");
 figlet(logo, (err, data) => {
@@ -47,14 +47,18 @@ figlet(logo, (err, data) => {
 
 const sleep = (ms = 1500) => new Promise(resolve => setTimeout(resolve, ms));
 
-async function runTitle(data){
+async function runTitle(data) {
     const animatedTitle = chalkAnimation.rainbow(data);
     await sleep();
     animatedTitle.stop();
     console.log(chalk.blue('---------------------------------'));
     console.log("2");
-    await menu.mainMenu();
-    console.log(menu.getTeam());
+    menu.mainMenu()
+
+   
+    // console.log(menu.getTeam());
+    // console.log(chalk.blue('---------------------------------'));
+
 }
 
 
