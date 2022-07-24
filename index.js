@@ -4,6 +4,7 @@ import Intern from './lib/Intern.js';
 import Engineer from './lib/Engineer.js';
 import Manager from './lib/Manager.js';
 import Menus from './lib/Menus.js';
+import Teams from './lib/Teams.js';
 
 
 //get inquirer to prompt the user for input
@@ -12,7 +13,6 @@ import inquirer from 'inquirer';
 import fs from 'fs';
 import chalkAnimation from 'chalk-animation';
 import figlet from 'figlet';
-import GenerateTeams from './lib/Menus.js';
 
 
 //run the following animation while the program is running
@@ -29,7 +29,7 @@ import GenerateTeams from './lib/Menus.js';
 // console.log(chalk.blue('---------------------------------'));
 // console.log(chalk.blue('Please enter your selection:'));
 // console.log(chalk.blue('---------------------------------'));
-let obj = new Menus();
+const menu = new Menus();
 
 let logo = 'Employee Manager';
 console.log("1");
@@ -53,8 +53,8 @@ async function runTitle(data){
     animatedTitle.stop();
     console.log(chalk.blue('---------------------------------'));
     console.log("2");
-
-    obj.mainMenu();
+    await menu.mainMenu();
+    console.log(menu.getTeam());
 }
 
 
