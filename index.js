@@ -14,21 +14,6 @@ import fs from 'fs';
 import chalkAnimation from 'chalk-animation';
 import figlet from 'figlet';
 
-
-//run the following animation while the program is running
-// chalkAnimation.rainbow('Employee Manager');
-// console.log(data);
-// console.log(chalk.blue('Welcome to the Employee Manager!'));
-// console.log(chalk.blue('Please select an option below:'));
-// console.log(chalk.blue('---------------------------------'));
-// console.log(chalk.blue('1. Add an Employee'));
-// console.log(chalk.blue('2. View Employee List'));
-// console.log(chalk.blue('3. Update Employee Role'));
-// console.log(chalk.blue('4. Update Employee Manager'));
-// console.log(chalk.blue('5. Exit'));
-// console.log(chalk.blue('---------------------------------'));
-// console.log(chalk.blue('Please enter your selection:'));
-// console.log(chalk.blue('---------------------------------'));
 const menu = new Menus();
 const gen = new HTMLGenerator();
 let logo = 'Employee Manager';
@@ -56,11 +41,9 @@ async function runTitle(data) {
     menu.mainMenu()
 
    
-    // console.log(menu.getTeam());
-    // console.log(chalk.blue('---------------------------------'));
+
 
 }
 
 
 
-//to remove an npm package, use the npm uninstall packageName command
